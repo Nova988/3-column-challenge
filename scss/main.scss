@@ -1,3 +1,59 @@
+// Variables
+$primary-color-orange: #e38826;
+$primary-color-cyan: #006970;
+$primary-color-dark-cyan: #004241;
+$p-color: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+
+// main style 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: $light-gray;
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
 h2 {
-    color: blue;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// utility 
+.container {
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+}
+
+// Style Card 
+.column-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-item {
+        padding: 2rem 3rem;
+        border: 1px solid black;
+        flex: 1 1 33%;
+        min-height: 310px;
+    }
 }
